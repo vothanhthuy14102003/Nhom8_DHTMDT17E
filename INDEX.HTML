@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VI VU TRAVEL</title>
+  <link rel="stylesheet" href="CSS/STYLE.CSS">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <script src="script.js"></script>
+  <script src="timkiem.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="shortcut icon" href="IMAGE/LOGO/VIVUXOÁNỀN.png" >
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:0898673203" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">Hotline :</p>
+
+            <p class="helpline-number">0898673203</p>
+          </div>
+
+        </a>
+
+        <a href="INDEX.HTML" class="logo">
+          <img width="70PX" src="IMAGE/LOGO/VIVUXOÁNỀN.png" alt="logo">
+
+        </a>
+        
+        <div class="header-btn-group">
+            <a href="trangdangnhap.html">
+          <button class="search-btn" aria-label="Search">
+            <i  class="fa-solid fa-user"></i>
+          </button>
+        </a>
+    
+        </div>
+
+      </div>
+    </div><br>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/thanhluong.thao.9?locale=vi_VN" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@VirtualWorldVietnam" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="INDEX.HTML" class="logo">
+              <img width="100PX" src="IMAGE/VIVUXOÁNỀN.png" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+                
+          </div>
+                      <!-- 
+                - Thanh side bar
+                  -->
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="INDEX.HTML" class="navbar-link" data-nav-link>Trang chủ</a>
+            </li>
+
+            <li class="drop">
+              <a href="doanhnghiep.html" class="navbar-link" data-nav-link>Về chúng tôi </a>
+              <ul class="dropdown">
+                <li><a href="vechungtoi.html">Thành viên</a></li>
+                <li><a href="doanhnghiep.html">Doanh Nghiệp</a></li>
+            </ul>
+             
+            </li>
+
+            <li>
+              <a href="diemden.html" class="navbar-link" data-nav-link>Điểm đến</a>
+            </li>
+
+            <li class="drop">
+              <a href="gói.html" class="navbar-link" data-nav-link>Gói</a>
+              <ul class="dropdown">
+                <li><a href="góitren1m.html">Trên 1 triệu</a></li>
+                <li><a href="góiduoi1m.html">Dưới 1 triệu</a></li>
+            </ul>
+            </li>
+            
+            <li>
+              <a href="lienhe.html" class="navbar-link" data-nav-link>Liên hệ </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO TRANG CHỦ
+      -->
+           
+
+      <section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">DU LỊCH VIỆT NAM  
+          </h2>
+
+          <p class="hero-text">
+            Khám phá Việt Nam, tận hưởng cuộc sống!
+          </p>
+
+          <div class="btn-group">
+            <a href="diemden.html">
+            <button class="btn btn-primary">Tìm hiểu thêm</button>
+          </a>
+           <a href="gói.html">
+            <button class="btn btn-secondary">Đặt ngay</button>
+          </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Tìm kiếm điểm đến</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Nhập điểm đến"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Số lượng khách</label>
+
+              <input type="number" name="people" id="people" required placeholder="Số người" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Ngày đi</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Ngày về</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Tìm ngay</button>
+
+          </form>
+
+        </div>
+      </section>
+   
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Nơi khám phá</p>
+
+          <h2 class="h2 section-title">Điểm đến nổi tiếng</h2>
+
+          <p class="section-text">
+          Hãy chỉ nhớ những kỷ niệm, và để lại những dấu chân
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <a href="baidanang.html">
+                  <img src="IMAGE/danang.webp" alt="Cau Vang, Da Nang" loading="lazy">
+                </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="baidanang.html">Đà Nẵng</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="baidanang.html">Cầu Vàng</a>
+                  </h3>
+
+                  <p class="card-text">
+                    “Top 10 cây cầu có kiến trúc độc đáo và đẹp nhất thế giới”.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <a href="baidalat.html">
+                  <img src="IMAGE/dalat.jpg" alt="Thanh pho Da Lat, Lam Dong" loading="lazy">
+                </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="baidalat.html">Đà Lạt</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="baidalat.html">Thành phố Đà Lạt</a>
+                  </h3>
+
+                  <p class="card-text">
+                    "Top 10 điểm ngắm hoa hàng đầu thế giới"
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <a href="baivinhhalong.html">
+                  <img src="IMAGE/vinhhalong.jpg" alt="Vinh ha long, quang ninh" loading="lazy">
+                </a>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="baivinhhalong.html">Quảng Ninh</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="baivinhhalong.html">Vịnh Hạ Long</a>
+                  </h3>
+
+                  <p class="card-text">
+                  "1 trong 7 kỳ quan thiên nhiên của thế giới"
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button  class="btn btn-primary"> <a href="diemden.html">Nhiều địa điểm hơn</a> </button>
+
+        </div>
+      </section>
+      <!-- 
+        - #PACKAGE
+      -->
+      
+      <!-- 
+        - GÓI
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Gói phổ biến</p>
+
+          <h2 class="h2 section-title">Xem gói</h2>
+
+          <p class="section-text">
+              Hãy xem những nơi bạn muốn đến
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="IMAGE/nhatrang.jpg" alt="ĐI BIỂN" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Tour tham quan các đảo tại Nha Trang </h3>
+
+                  <p class="card-text">
+                   Đắm mình trong vẻ đẹp của bãi biển đầy nắng và nước biển trong xanh.
+                   Thưởng thức các món hải sản ngon tuyệt
+                   Lặn biển và khám phá các rạng san hô tuyệt đẹp cùng các chú cá đầy màu sắc
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">2ngày/1đêm</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">Số lượng:10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Khánh Hoà</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(25 đánh giá)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    1.500.000 VNĐ
+                    <span>/ NGƯỜI</span>
+                  </p>
+
+                  <button class="btn btn-secondary">ĐẶT NGAY</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="IMAGE/phongnhakebang.webp" alt="phong nha ke bang" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Tour tham quan động Phong Nha Kẻ Bàng</h3>
+
+                  <p class="card-text">
+                    Khám phá hang động đồ sộ tại động Thiên Đường vào những ngày chẵn.
+                    Du ngoạn sông Son vào động Phong Nha vào những ngày lẻ.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">2ngày/1đêm</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">số lượng: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Quảng Bình</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 đánh giá)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    1.000.000 VNĐ
+                    <span>/ NGƯỜI</span>
+                  </p>
+
+                  <button class="btn btn-secondary">ĐẶT NGAY</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="IMAGE/cairang.jpg" alt="cai rang" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Tour trong ngày|Tham quan chợ nổi Cái Răng</h3>
+
+                  <p class="card-text">
+                    Ăn sáng trên ghe như người dân địa phương.Khám phá sinh hoạt của nguoiwf dân miền tây.
+                    Chìm đắm trong vẻ đẹp độc đáo,văn hoá đầy sắc màu.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">1 ngày</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">số lượng: 5</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Cần Thơ</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(30 đánh giá)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    500.000 VNĐ
+                    <span>/ NGƯỜI</span>
+                  </p>
+
+                  <button class="btn btn-secondary">ĐẶT NGAY</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+              <a href="gói.html" >
+          <button class="btn btn-primary">XEM TẤT CẢ GÓI </button>
+        </a>
+        </div>
+      </section>
+      <!-- 
+        - #BỘ SƯU TẬP
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">BỘ SƯU TẬP ẢNH</p>
+
+          <h2 class="h2 section-title">Ảnh từ chuyến đi</h2>
+
+          <p class="section-text">
+           Hình ảnh sẽ là thứ lưu giữ những khoảnh khắc tuyệt vời 
+          </p>
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="IMAGE/checkinDN.jpg" alt="checkin da nang">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="IMAGE/CHECKINCR.webp" alt="Checkin cai rang">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="IMAGE/CHECKINDL.jpg" alt="checkin da lat">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="IMAGE/CHECKINPNKE.jpg" alt="checkin phong nha ke bang">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="IMAGE/CHECKINVHL.jpg" alt="checkin vinh ha long">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+        
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA liên hệ
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">LIÊN HỆ </p>
+
+            <h2 class="h2 section-title">HÃY ĐẾN VỚI CHÚNG TÔI ĐỂ CÓ NHỮNG TRẢI NGHIỆM ĐÁNG NHỚ</h2>
+
+            <p class="section-text">
+            </p>
+          </div>
+            <a href="lienhe.html">
+          <button class="btn btn-secondary">LIÊN HỆ NGAY !</button>
+        </a>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER chân trang
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="IMAGE/LOGO/VIVUXOÁNỀN.png" alt=" logo">
+          </a>
+          <p  class="footer-text">
+            Dịch vụ Vivu Travel mong muốn mang đến cho khách hàng những lựa chọn tốt nhất khi đi du lịch. 
+          </p>
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">LIÊN HỆ !</h4>
+
+          <p class="contact-text">
+            Liên ngay nếu bạn muốn!!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:0898673203" class="contact-link">0898673203</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">lthaosd2k3@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>12 Nguyễn Văn Bảo, P4,Gò Vấp, TP.HCM</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Đăng ký tài khoảng để biết thêm những cập nhật mới nhất !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Nhập email của bạn" required>
+
+            <button type="submit" class="btn btn-secondary">Đăng ký</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">coder</a>.THẢOTHUÝNGÂN
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="INDEX.HTML" class="footer-bottom-link">Trang chủ</a>
+          </li>
+
+          <li>
+            <a href="diemden.html" class="footer-bottom-link">Điểm đến</a>
+          </li>
+
+          <li>
+            <a href="lienhe.html" class="footer-bottom-link">Liên hệ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="SCRIPT.JS"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

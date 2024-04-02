@@ -1,0 +1,76 @@
+/* Shared styles for both forms */
+.login-form-wrapper {
+    background-image:  linear-gradient(to right, rgb(150, 202, 242), rgb(235, 136, 230));
+    padding: 30px;
+    border-radius: 5px;
+
+  }
+  
+  .sn-form-inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .single-input {
+    margin-bottom: 20px;
+  }
+  
+  .single-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Login form styles */
+  #login-form-email,
+  #login-form-password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .checkbox-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .checkbox-input input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Registration form styles */
+  #register-form-name,
+  #register-form-email,
+  #register-form-password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #register-form-email {
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Buttons */
+  .sn-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .sn-form button:hover {
+    background-color: #3e8e41;
+  }
+  
